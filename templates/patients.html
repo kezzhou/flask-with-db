@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<header>
+
+  <h1>Olympia Health Portal</h1>
+
+</header>
+
+<div class="p-3 mb-2 bg-dark text-white">
+
+<section>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/patients">Patients</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+
+    <h2>Patients</h2>
+
+    
+      <table class="table table-dark table-striped">
+        <tr>  
+            <th> MRN </th>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Sex </th>
+            <th> DOB </th>
+            <th> Phone Number </th>
+            <th> Address </th>
+            <th> Primary Care Provider ID </th>
+        </tr>
+        {% for patient in listPatients %}
+            <tr>
+                <td> {{ patient.MRN }} </td>
+                <td> {{ patient.firstName }} </td>
+                <td> {{ patient.lastName }} </td>
+                <td> {{ patient.sex }} </td>
+                <td> {{ patient.DOB }} </td>
+                <td> {{ patient.phone_number }} </td>
+                <td> {{ patient.address }} </td>
+                <td> {{ patient.pcp_id }} </td>
+            </tr>
+        {% endfor %}
+    </table>
+  
+
+  </div>
+  
+
+</section>
+
+<footer>
+
+  <p>Copyright © 2022 Kevin Zhou. All Rights Reserved. </p>
+
+</footer>
+
+</body>
+
+</html>
