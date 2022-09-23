@@ -5,5 +5,4 @@ HHA 504 // Week 4 // Assignment 4 // Part 1
 
 ## our directory has simplified to just an index or homepage and a patients page where the table is housed.
 
-## flask app was deployed to GCP public IP: 34.71.141.1
-## it seems that when deployed remotely, there are a few failures in calling bootstrap elements. Formatting is affected.
+## flask app was deployed successfully to Azure public IP: 20.106.91.67
