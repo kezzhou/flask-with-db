@@ -7,4 +7,3 @@ HHA 504 // Week 4 // Assignment 4 // Part 1
 
 ## flask app was deployed to GCP public IP: 34.71.141.1
 ## it seems that when deployed remotely, there are a few failures in calling bootstrap elements. Formatting is affected.
-## However, standalone elements are displayed, such as the table.
